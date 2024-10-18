@@ -33,6 +33,7 @@ header>div{
 a.HeaderButtons{
     border: none;
     background-color: black;
+    /* Esto está bien aquí??? o es mejor meter cada 'a' en un div y meter el padding al div */
     padding: 10px 18px;
     font-size: 15px;
     font-weight: bold;
@@ -157,21 +158,29 @@ div.Section1Container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
-h1.Section1Content{
-    font-size: 37px;
+    padding-top: 100px;
 }
 
 h2.Section1Content{
+    font-size: 37px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+h3.Section1Content{
     font-size: 24px;
     text-align: center;
+    font-weight: normal;
+    color: white;
+    text-shadow: 3px 3px 10px #333333;
+    margin-top: 10px;
+}
+
+div.Section1Content{
+    padding-top: 50px;
 }
 
 table{
-    padding-top: 50px;
     border-bottom: 1px solid white;
     /* Espacio entre las columnas */
     border-spacing: 0px;
@@ -180,6 +189,7 @@ table{
 th{
     color: white;
     text-align: left;
+    line-height: 24px;
     width: 40%;
 }
 
@@ -236,4 +246,67 @@ img.RectLine{
 img.Tick{
     width: 30px;
     height: 30px;
+}
+
+/* ======== Section 2 ======== */
+
+div.Section2Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+h3.Section2Content{
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul.PaymentMethods{
+    display: flex;
+    align-items: stretch;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li.PaymentMethods{
+    background-color: white;
+    border-radius: 5px;
+    margin: 4px;
+    padding: 0px 4px;
+}
+
+img.PaymentMethods{
+    width: 50px;
+    padding-top: 4px;
+}
+
+img.PayPal{
+    padding-top: 15px;
+}
+
+div.Section2Content{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+h2.PremiumFeatures{
+    text-align: center;
+}
+
+ul.PremiumFeatures{
+    list-style-type: none;
+}
+
+li.PremiumFeatures{
+    color: white;
+}
+
+li.PremiumFeatures::before{
+    content: '✔';
+    padding-right: 10px;
 }
