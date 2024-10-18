@@ -20,7 +20,7 @@ a{
 
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: black;
     width: auto;
 }
@@ -66,25 +66,24 @@ p#SeparatorBar{
 
 /* ======== Main Section ======== */
 
-article{
-    background-image: linear-gradient(to bottom, RGB(213, 176, 180), RGB(18, 18, 18));
+/* ======== Article ======== */
+
+div.ArticleContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 60px;
+    background-image: linear-gradient(RGB(213, 176, 180) 10%, RGB(18, 18, 18) 42%);
 }
 
 div.ArticleContent{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 500px;
-    padding-left: 60px;
-    padding-right: 60px;
-}
-
-div.Content{
     padding: 40px;
 }
 
-h1.Content{
+h1.ArticleContent{
     font-size: 45px;
     color: white;
     text-shadow: 3px 3px 10px #333333;
@@ -93,7 +92,7 @@ h1.Content{
     margin-top: 0px;
 }
 
-h2.Content{
+h2.ArticleContent{
     font-size: 18px;
     font-weight: normal;
     color: white;
@@ -101,7 +100,7 @@ h2.Content{
     text-align: justify;
 }
 
-button.Content{
+button.ArticleContent{
     font-size: 15px;
     font-weight: bold;
     border-radius: 25px;
@@ -112,7 +111,7 @@ button.Content{
     margin-right: 15px;
 }
 
-button.Content:hover{
+button.ArticleContent:hover{
     cursor: pointer;
     scale: 1.025;
 }
@@ -132,14 +131,14 @@ button#BlackButton{
     border: 1px solid white;
 }
 
-p.Content{
+p.ArticleContent{
     color: white;
     font-size: 12px;
     text-shadow: 3px 3px 10px #333333;
     text-align: justify;
 }
 
-a.Content{
+a.ArticleContent{
     color: white;
 }
 
@@ -148,7 +147,93 @@ img#Monigote{
     height: 200px;
 }
 
+/* ======== Section 1 ======== */
+
 section{
     background-color: RGB(18, 18, 18);
-    height: 400px;
+}
+
+div.Section1Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+h1.Section1Content{
+    font-size: 37px;
+}
+
+h2.Section1Content{
+    font-size: 24px;
+    text-align: center;
+}
+
+table{
+    padding-top: 50px;
+    border-bottom: 1px solid white;
+    /* Espacio entre las columnas */
+    border-spacing: 0px;
+}
+
+th{
+    color: white;
+    text-align: left;
+    width: 40%;
+}
+
+th.Column1{
+    vertical-align: bottom;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+th.Column2{
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+th.Column3{
+    padding-bottom: 40px;
+    padding-left: 10px;
+}
+
+td{
+    color: white;
+    border-top: 1px solid white;
+    /* Decoracion del texto de las columnas */
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: white;
+    /* Separación entre el subrayado y el texto */
+    text-underline-offset: 4px;
+    /* Separación entre las lineas del texto */
+    line-height: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+td.Column1{
+    text-align: left;
+    padding-left: 10px;
+}
+
+td.Column1:hover, td.Column2:hover{
+    background-color: RGB(31, 31, 31);
+}
+
+td.Column3:hover{
+    background-color: RGB(58, 58, 58);
+}
+
+img.RectLine{
+    width: 45px;
+    height: 25px;
+}
+
+img.Tick{
+    width: 30px;
+    height: 30px;
 }
