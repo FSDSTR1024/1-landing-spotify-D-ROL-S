@@ -325,8 +325,6 @@ div.Section3Container{
 div.Section3Content{
     background-color: RGB(36, 36, 36);
     padding: 220px 180px;
-    max-width: 10px;
-    max-height: 10px;
     border-radius: 8px;
     position: relative;
 }
@@ -344,6 +342,7 @@ div.IndividualPlanContent{
 p.PlanTopInfo{
     border-radius: 8px 0px;
     padding: 8px 16px;
+    max-width: 200px;
     font-weight: bold;
 }
 
@@ -355,8 +354,64 @@ p.StudientsPlanTop{
     background-color: RGB(196, 177, 212);
 }
 
+img.IndividualPlanContent{
+    width: 32px;
+}
+
+ul.Premium{
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+li.Premium{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+li.Premium::before{
+    content: "";
+    display: inline-block;
+    background-image: url('assets/spotify.png');
+    background-size: contain; 
+    width: 40px;  
+    height: 40px; 
+}
+
+p.IndividualPlanContent{
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: white;
+    margin: 0px;
+}
+
 h2.IndividualPlanContent{
     color: RGB(255, 210, 215);
     font-size: 35px;
     padding-left: 16px;
+    margin: 0px;
+}
+
+p.PriceInfo{
+    color: RGB(162, 165, 161);
+    padding-top: 0px;
+}
+
+div.Separator{
+    border-bottom: 1px solid RGB(162, 165, 161);
+    margin-left: 16px;
+    margin-top: 15px;
+    padding: 0px 165px;
+}
+
+li.PlanFeatures{
+    color: white;
+}
+
+button.PlansButton{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
