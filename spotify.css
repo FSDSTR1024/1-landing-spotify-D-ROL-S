@@ -255,7 +255,7 @@ div.Section2Container{
     flex-direction: column;
     align-items: center;
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
 }
 
 h3.Section2Content{
@@ -309,4 +309,54 @@ li.PremiumFeatures{
 li.PremiumFeatures::before{
     content: '✔';
     padding-right: 10px;
+}
+
+/* ======== Section 3 ======== */
+
+div.Section3Container{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-column-gap: 40px;
+    grid-row-gap: 50px;
+    padding-bottom: 120px;
+}
+
+div.Section3Content{
+    background-color: RGB(36, 36, 36);
+    padding: 220px 180px;
+    max-width: 10px;
+    max-height: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+div.Section3Content:last-child{
+    grid-column: 1 / span 3;
+}
+
+div.IndividualPlanContent{
+    position: absolute;
+    left: 0;
+    top: -15px;
+}
+
+p.PlanTopInfo{
+    border-radius: 8px 0px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+p.IndividualPlanTop{
+    background-color: RGB(255, 210, 215);
+}
+
+p.StudientsPlanTop{
+    background-color: RGB(196, 177, 212);
+}
+
+h2.IndividualPlanContent{
+    color: RGB(255, 210, 215);
+    font-size: 35px;
+    padding-left: 16px;
 }
