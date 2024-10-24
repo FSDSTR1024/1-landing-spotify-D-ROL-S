@@ -324,7 +324,7 @@ div.Section3Container{
 
 div.Section3Content{
     background-color: RGB(36, 36, 36);
-    padding: 220px 180px;
+    padding: 280px 210px;
     border-radius: 8px;
     position: relative;
 }
@@ -333,10 +333,23 @@ div.Section3Content:last-child{
     grid-column: 1 / span 3;
 }
 
-div.IndividualPlanContent{
+div.PlanTop{
     position: absolute;
     left: 0;
     top: -15px;
+}
+
+div.PlanContent{
+    position: absolute;
+    display: grid;
+    grid-template-rows: 300px auto;
+    left: 0;
+    top: 40px;
+}
+
+div.DuoPlanContent{
+    top: 0px;
+    grid-template-rows: 345px auto;
 }
 
 p.PlanTopInfo{
@@ -378,40 +391,102 @@ li.Premium::before{
     height: 40px; 
 }
 
-p.IndividualPlanContent{
+p.PlanContent{
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 5px;
     color: white;
+    font-weight: 600;
     margin: 0px;
 }
 
-h2.IndividualPlanContent{
-    color: RGB(255, 210, 215);
+p.DuoPlanContent{
+    padding-bottom: 20px;
+}
+
+h2.PlanContent{
     font-size: 35px;
     padding-left: 16px;
     margin: 0px;
 }
 
+h2.IndividualPlanContent{
+    color: RGB(255, 210, 215);
+}
+
+h2.StudientsPlanContent{
+    color: RGB(196, 177, 212);
+}
+
+h2.DuoPlanContent{
+    color: RGB(255, 200, 98);
+}
+
 p.PriceInfo{
     color: RGB(162, 165, 161);
     padding-top: 0px;
+    font-weight: normal;
+    font-size: 14px;
 }
 
 div.Separator{
     border-bottom: 1px solid RGB(162, 165, 161);
     margin-left: 16px;
     margin-top: 15px;
-    padding: 0px 165px;
+    width: 385px;
+}
+
+ul.PlanFeatures{
+    margin-top: 25px;
+    padding-left: 35px;
 }
 
 li.PlanFeatures{
     color: white;
+    font-weight: 400;
+    margin-bottom: 5px;
 }
 
-button.PlansButton{
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-left: 30px;
-    margin-top: 30px;
+li.PlanFeatures:last-child{
+    margin-bottom: 0px;
+}
+
+div.PlansButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button.PlanContentButton{
+    margin-right: 0px;
+    width: 380px;
+    height: 60px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+button.StudientsPlanContent{
+    background-color:RGB(196, 177, 212);
+}
+
+button.DuoPlanContent{
+    background-color: RGB(255, 200, 98)
+}
+
+p.FooterPlanInfo{
+    color: RGB(162, 165, 161);
+    text-align: center;
+    margin: 0px;
+    padding: 0px 24px;
+    font-size: 14px;
+}
+
+a.FooterPlanInfo{
+    color: RGB(162, 165, 161);
+}
+
+a.FooterPlanInfo:hover{
+    font-weight: bold;
 }
