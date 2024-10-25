@@ -499,3 +499,143 @@ a.FooterPlanInfo{
 a.FooterPlanInfo:hover{
     font-weight: bold;
 }
+
+/* ======== Section 4 ======== */
+
+div.Section4Container{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.Section4Content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.Questions{
+    display: flex;
+    justify-content: left;
+    margin-top: 30px;
+    width: 40%;
+}
+
+
+h3.Section4Content{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+h4.Section4Content{
+    color: white;
+    margin-bottom: 0px;
+}
+
+a.Section4Content{
+    font-weight: normal;
+}
+
+a.Section4Content:hover{
+    font-weight: bold;
+}
+
+ul.Section4Content{
+    list-style-type: none;
+    color: white;
+    width: 100%;
+}
+
+li.Section4Content{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    border-bottom: 1px solid grey;
+    text-wrap: none;
+}
+
+li.Section4Content:last-child{
+    border-bottom: none;
+}
+
+li.Section4Content:hover{
+    background-color: RGB(58, 58, 58);
+}
+
+li.Section4Content summary:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+details[open] > summary::after {
+    transform: rotate(180deg);
+}
+
+li:has(details[open]) {
+    background-color: RGB(58, 58, 58);
+}
+
+details[open] > div{
+    background-color: RGB(31, 31, 31);
+    margin-top: 5px;
+    padding: 1px 20px;
+    border-radius: 10px;
+}
+
+summary{
+    list-style: none;
+}
+
+summary::after{
+    display: inline-flex;
+    content: '';
+    width: 18px;
+    height: 10px;
+    background: url(assets/arrow.png) no-repeat;
+    margin-left: 1000px;
+}
+
+/* ======== Footer ======== */
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 600px;
+}
+
+div.LogoContainer{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+
+div.SocialMediaContainer{
+    display: flex;
+    margin-top: 100px;
+}
+
+div.SocialMedia{
+    padding: 15px;
+    margin: 0px 5px;
+    background: RGB(34, 35, 38);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+}
+
+div.SocialMedia:hover{
+    cursor: pointer;
+}
+
+div.SocialMedia:hover > img{
+    background-color: #1ed760;
+}
+
+img.SocialMedia{
+    width: 25px;
+    background-color: white;
+} 
