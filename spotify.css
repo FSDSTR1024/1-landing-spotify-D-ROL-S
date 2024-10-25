@@ -343,6 +343,7 @@ div.PlanContent{
     position: absolute;
     display: grid;
     grid-template-rows: 300px auto;
+    width: 100%;
     left: 0;
     top: 40px;
 }
@@ -422,6 +423,10 @@ h2.DuoPlanContent{
     color: RGB(255, 200, 98);
 }
 
+h2.FamiliarPlanContent{
+    color: RGB(165, 187, 209);
+}
+
 p.PriceInfo{
     color: RGB(162, 165, 161);
     padding-top: 0px;
@@ -473,6 +478,10 @@ button.StudientsPlanContent{
 
 button.DuoPlanContent{
     background-color: RGB(255, 200, 98)
+}
+
+button.FamiliarPlanContent{
+    background-color: RGB(165, 187, 209);
 }
 
 p.FooterPlanInfo{
