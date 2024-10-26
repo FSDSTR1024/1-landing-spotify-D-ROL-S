@@ -519,7 +519,7 @@ div.Questions{
     display: flex;
     justify-content: left;
     margin-top: 30px;
-    width: 40%;
+    width: 70%;
 }
 
 
@@ -594,7 +594,7 @@ summary::after{
     width: 18px;
     height: 10px;
     background: url(assets/arrow.png) no-repeat;
-    margin-left: 1000px;
+    margin-left: 1180px;
 }
 
 /* ======== Footer ======== */
@@ -607,9 +607,18 @@ footer{
     height: 600px;
 }
 
+div.LinksFooterContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 160px);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 30px;
+    align-items: start;
+    justify-items: start;
+    margin-top: 100px;
+}
+
 div.LogoContainer{
     display: flex;
-    margin-top: 100px;
     align-items: center;
 }
 
@@ -639,3 +648,47 @@ img.SocialMedia{
     width: 25px;
     background-color: white;
 } 
+
+img.LogoFooter{
+    padding-left: 0px;
+}
+
+p.LinksFooter{
+    margin-bottom: 20px;
+    color: RGB(162, 165, 161);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div.LinksFooter{
+    display: flex;
+    flex-direction: column;
+}
+
+div.LinksFooterColumn2{
+    grid-column: 2;
+}
+
+a.LinksFooter{
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+a.LinksFooter:hover{
+    color: #1ed760;
+}
+
+p.LinksFooterColumn3{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+p.LinksFooterColumn4{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+p.LinksFooterColumn5{
+    grid-column: 5;
+    grid-row: 1;
+}
